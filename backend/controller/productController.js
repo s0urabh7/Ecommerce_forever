@@ -26,7 +26,7 @@ const addProduct = async(req, res) => {
             category,
             price:Number(price),
             subcategory,
-            bestseller: bestseller==='True'? true: false,
+            bestseller: bestseller==='true'? true: false,
             sizes: JSON.parse(sizes), //frontend to here->array, here form data(string)& form data can't be stored in db so parse it to from string to array to store in db
             image: imagesUrl,
             date: Date.now()
